@@ -1,23 +1,24 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import type { NextPage } from "next";
+import Head from "next/head";
+import { HomeView } from "../views/home";
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Write Mind</title>
+        <meta property="og:title" content="BHEET" />
+        <meta property="og:site_name" content="BHEET" />
+        <meta property="og:description" content="My mind writing in the waves of the human language." />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://github.com/KRKBHEET/writemind/blob/d631289a266e5eecd8a6ab7f25b0478c9b4a6981/public/YinYang.png"
+        />
       </Head>
+      <HomeView/>
+    </>
+  );
+};
 
-      <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://shess.krk.finance">Shess!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
-    </div>
-  )
-}
+export default Home;
