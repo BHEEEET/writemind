@@ -2,10 +2,7 @@ const Header = () => {
   return (
     <>
     <header>
-        <h1>Write Mind</h1>
-        <ul>
-            <li>Contact</li>
-        </ul>
+    <a href="/"><img src="YinYang.png" alt="" width={40} height={40}/></a>
     </header>
     </>
   );

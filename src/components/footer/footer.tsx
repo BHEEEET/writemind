@@ -1,12 +1,12 @@
 const Footer = () => {
   return (
     <>
-    <header>
+    <footer>
         <ul>
-            <li>Twitter</li>
-            <li>Github</li>
+            <li><a href="https://twitter.com/BHEEEET">Twitter</a></li>
+            <li><a href="https://github.com/KRKBHEET">Github</a></li>
         </ul>
-    </header>
+    </footer>
     </>
   );
 };

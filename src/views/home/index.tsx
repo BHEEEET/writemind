@@ -1,5 +1,6 @@
-
- 
+import Header from "../../components/header/header";
+import Footer from "../../components/footer/footer";
+import TitleList from "../../components/titles/titles";
 
 // React
 import { useEffect, useState } from "react";
@@ -19,6 +20,9 @@ export const HomeView = () => {
 
   return (
     <div>
+      <Header/>
+      <TitleList/>
+      <Footer/>
     </div>
   );
 };
