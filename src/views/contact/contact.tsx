@@ -19,9 +19,9 @@ export const HomeView = () => {
   }, []);
 
   return (
-    <div className="main">
+    <div>
       <Header/>
-      <TitleList/>
+      wassuppp
       <Footer/>
     </div>
   );
