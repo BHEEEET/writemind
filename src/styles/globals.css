@@ -42,18 +42,20 @@ header>a>img{
 }
 
 .bord{
-  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-left: 1rem;
   text-align: start;
   height: 90%;
 }
 
 .bord>li{
-  padding: 1rem;
+  padding-bottom: 4rem;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  font-size: 25px;
 }
 
 img {
