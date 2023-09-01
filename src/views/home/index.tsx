@@ -20,7 +20,6 @@ export const HomeView = () => {
 
   return (
     <div className="main">
-      qsdfqsdf
       <Header/>
       <TitleList/>
       <Footer/>
