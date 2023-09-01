@@ -38,7 +38,7 @@ const TitleList = () => {
         return (
           <li>
             <a
-              href={`https://raw.githubusercontent.com/KRKBHEET/writemind/main/public/posts/${post.name}`}
+              href={`/${post.name}`}
             >
               {post.name}
             </a>
