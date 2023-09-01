@@ -4,23 +4,31 @@ const TitleList = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-      fetch(
-        `https://api.github.com/repos/KRKBHEET/writemind/contents/public/posts`,
-        {
-          headers: {
-            Authorization: process.env.GITHUB_ACCES_TOKEN,
-          },
-        }
-      )
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
-          setPosts(data);
-        });
-  }, []);
+    //get titles from /posts in the github repo
+    fetch(
+      `https://api.github.com/repos/KRKBHEET/writemind/contents/public/posts`,
+      {
+        headers: {
+          Authorization: process.env.GITHUB_ACCES_TOKEN,
+        },
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setPosts(data);
+      });
 
-  //get content
-  //https://raw.githubusercontent.com/KRKBHEET/writemind/main/public/posts/hello.md
+    //get content directly from the github repo
+    //https://raw.githubusercontent.com/KRKBHEET/writemind/main/public/posts/hello.md
+    fetch(
+      `https://raw.githubusercontent.com/KRKBHEET/writemind/main/public/posts/hello.md`
+    )
+      .then((response) => response.text())
+      .then((data) => {
+        console.log(data);
+      });
+  }, []);
 
   return (
     <ul className="bord">
@@ -28,9 +36,13 @@ const TitleList = () => {
         const idx = index;
 
         return (
-            <li>
-              <a href={`/${post.name}`}>{post.name}</a>
-            </li>
+          <li>
+            <a
+              href={`https://raw.githubusercontent.com/KRKBHEET/writemind/main/public/posts/${post.name}`}
+            >
+              {post.name}
+            </a>
+          </li>
         );
       })}
     </ul>
