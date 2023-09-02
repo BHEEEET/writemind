@@ -6,12 +6,15 @@ const Template = () => {
   const { title } = router.query;
   const [content, setContent] = useState("");
 
-  const link = `https://raw.githubusercontent.com/KRKBHEET/writemind/main/public/posts/${title}`;
+  useEffect(() => {
+  let link;
+  while(link = null){
+   link = `https://raw.githubusercontent.com/KRKBHEET/writemind/main/public/scrolls/${title}`;
+  }
   console.log(router.query)
 
   console.log(link)
 
-  useEffect(() => {
     // Fetch content directly from the GitHub repo
     fetch(link)
       .then((response) => response.text())
