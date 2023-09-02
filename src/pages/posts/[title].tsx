@@ -6,23 +6,23 @@ const Template = () => {
   const { title } = router.query;
   const [content, setContent] = useState("");
 
-  useEffect(() => {
-  let link;
-  while(link = null){
-   link = `https://raw.githubusercontent.com/KRKBHEET/writemind/main/public/scrolls/${title}`;
+  //filter the first rendered 'title' from 'router.query' that is 'undefined'
+  if (!title) {
+    return;
   }
-  console.log(router.query)
 
-  console.log(link)
-
-    // Fetch content directly from the GitHub repo
-    fetch(link)
+  // Fetch content directly from the GitHub repo
+  const getContent = async () => {
+    const response = fetch(
+      `https://raw.githubusercontent.com/KRKBHEET/writemind/main/public/scrolls/${title}`
+    )
       .then((response) => response.text())
       .then((data) => {
-        console.log(data);
         setContent(data);
       });
-  }, []);
+  };
+  getContent();
+  console.log(title);
 
   return (
     <div>

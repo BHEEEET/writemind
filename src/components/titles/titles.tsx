@@ -38,7 +38,7 @@ const TitleList = () => {
         return (
           <li>
             <a
-              href={`/${post.name}`}
+              href={`/posts/${post.name}`}
             >
               {post.name}
             </a>
