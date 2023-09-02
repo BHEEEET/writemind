@@ -1,8 +1,10 @@
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import * as fs from "fs";
 
 const Template = () => {
   const router = useRouter();
+  //get the title from the hyperlink in the browser
   const { title } = router.query;
   const [content, setContent] = useState("");
 
@@ -22,7 +24,9 @@ const Template = () => {
       });
   };
   getContent();
-  console.log(title);
+  const file = fs.readFile("public/scrolls/hello.md", "utf-8", function(err, data){
+    console.log(data)
+  });
 
   return (
     <div>
