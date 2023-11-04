@@ -42,10 +42,13 @@ header>a>img{
 }
 
 .bord{
-  padding-top: 2rem;
   padding-left: 1rem;
   text-align: start;
   height: 90%;
+  list-style: none;
+  width: 100%;
+  padding: 10;
+  /* display: flex; */
 }
 
 .bord>li{
@@ -70,14 +73,6 @@ ul {
   margin: 0;
 }
 
-ul {
-  padding: 0;
-  list-style: none;
-  width: 100%;
-  padding: 10;
-  text-align: center;
-  /* display: flex; */
-}
 
 button {
   padding: 0.5rem 1rem;
