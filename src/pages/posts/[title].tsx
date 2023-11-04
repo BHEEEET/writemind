@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
-import * as fs from "fs";
+import Markdown from "react-markdown"
+import remarkGfm from "remark-gfm";
 
 const Template = () => {
   const router = useRouter();
@@ -8,31 +9,28 @@ const Template = () => {
   const { title } = router.query;
   const [content, setContent] = useState("");
 
-  //filter the first rendered 'title' from 'router.query' that is 'undefined'
+  //filter the first rendered 'title' from 'router.query' (/posts/[title]) that is 'undefined'
   if (!title) {
     return;
   }
 
   // Fetch content directly from the GitHub repo
-  const getContent = async () => {
-    const response = fetch(
-      `https://raw.githubusercontent.com/KRKBHEET/writemind/main/public/scrolls/${title}`
-    )
-      .then((response) => response.text())
-      .then((data) => {
-        setContent(data);
-      });
-  };
-  getContent();
-  const file = fs.readFile("public/scrolls/hello.md", "utf-8", function(err, data){
-    console.log(data)
-  });
+  fetch(
+    `https://raw.githubusercontent.com/bheeeet/writemind/main/public/scrolls/${title}`
+  )
+    .then((response) => response.text())
+    .then((data) => {
+      console.log(data);
+      setContent(data);
+    });
+
 
   return (
     <div>
       <h1>{title}</h1>
-      {content}
+      <Markdown remarkPlugins={[remarkGfm]}>{content}</Markdown>
     </div>
+    
   );
 };
 
