@@ -3,8 +3,8 @@ const Footer = () => {
     <>
     <footer>
         <ul>
-            <li><a href="https://twitter.com/BHEEEET">Twitter</a></li>
-            <li><a href="https://github.com/BHEEEET">Github</a></li>
+            <li><a href="https://twitter.com/BHEEEET"><img src="favicon.ico"/>Twitter</a></li>
+            <li><a href="https://github.com/BHEEEET"><img src="favicon.ico"/>Github</a></li>
         </ul>
     </footer>
     </>
