@@ -15,13 +15,23 @@ body {
 }
 
 body{
-  background-color: rgb(26, 26, 26);
-  color: white;
+  background-color: rgb(17, 17, 17);
+  color: rgb(195, 195, 195);
 }
 
 footer{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+/*This is for the .md code preview*/
+pre{
+  background-color: rgb(20, 20, 20);
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  width: 30rem;
+  display: inline-block;
+  border-radius: 3px;
 }
 
 li{
