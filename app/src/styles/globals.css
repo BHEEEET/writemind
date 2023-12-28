@@ -1,0 +1,90 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#__next{
+  height: 100vh;
+}
+
+body{
+  background-color: rgb(17, 17, 17);
+  color: rgb(195, 195, 195);
+}
+
+footer{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/*This is for the .md code preview*/
+pre{
+  background-color: rgb(20, 20, 20);
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  width: 30rem;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+li{
+  width: 100%;
+  padding: 2px;
+}
+
+header{
+  margin-top: 0.5rem;
+}
+
+header>a>img{
+  display: block;
+  margin: 0 auto;
+}
+.main{
+  height: 100%;
+}
+
+.bord{
+  padding-left: 1rem;
+  text-align: start;
+  height: 90%;
+  list-style: none;
+  width: 100%;
+  padding: 10;
+  /* display: flex; */
+}
+
+.bord>li{
+  padding-bottom: 4rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+img {
+  max-width: 100%;
+  height:90%;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+
+button {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
