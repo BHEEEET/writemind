@@ -6,7 +6,7 @@ const TitleList = () => {
   useEffect(() => {
     //get titles from /posts in the github repo
     fetch(
-      `https://api.github.com/repos/KRKBHEET/writemind/app/contents/public/scrolls`,
+      `https://api.github.com/repos/bheeeet/writemind/app/contents/public/scrolls`,
       {
         headers: {
           Authorization: process.env.GITHUB_ACCES_TOKEN,
@@ -22,7 +22,7 @@ const TitleList = () => {
     //get content directly from the github repo
     //https://raw.githubusercontent.com/KRKBHEET/writemind/main/public/posts/hello.md
     fetch(
-      `https://raw.githubusercontent.com/KRKBHEET/writemind/main/app/public/scrolls/hello.md`
+      `https://raw.githubusercontent.com/bheeeet/writemind/main/app/public/scrolls/hello.md`
     )
       .then((response) => response.text())
       .then((data) => {
