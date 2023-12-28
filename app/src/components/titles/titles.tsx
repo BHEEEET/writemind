@@ -20,7 +20,7 @@ const TitleList = () => {
       });
 
     //get content directly from the github repo
-    //https://raw.githubusercontent.com/KRKBHEET/writemind/main/public/posts/hello.md
+    //https://raw.githubusercontent.com/bheeeet/writemind/main/public/posts/hello.md
     fetch(
       `https://raw.githubusercontent.com/bheeeet/writemind/main/app/public/scrolls/hello.md`
     )
