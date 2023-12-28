@@ -16,7 +16,7 @@ const Template = () => {
 
   // Fetch content directly from the GitHub repo
   fetch(
-    `https://raw.githubusercontent.com/bheeeet/writemind/main/public/scrolls/${title}`
+    `https://raw.githubusercontent.com/bheeeet/writemind/main/app/public/scrolls/${title}`
   )
     .then((response) => response.text())
     .then((data) => {

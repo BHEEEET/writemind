@@ -12,7 +12,7 @@ const Drerrie: NextPage = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://raw.githubusercontent.com/KRKBHEET/writemind/main/public/YinYang.png"
+          content="https://raw.githubusercontent.com/KRKBHEET/writemind/main/app/public/YinYang.png"
         />
       </Head>
       Drerrie
