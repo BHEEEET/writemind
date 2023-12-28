@@ -6,7 +6,7 @@ const TitleList = () => {
   useEffect(() => {
     //get titles from /posts in the github repo
     fetch(
-      `https://api.github.com/repos/bheeeet/writemind/app/contents/public/scrolls`,
+      `https://api.github.com/repos/bheeeet/writemind/contents/app/public/scrolls`,
       {
         headers: {
           Authorization: process.env.GITHUB_ACCES_TOKEN,
