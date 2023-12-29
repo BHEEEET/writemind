@@ -32,3 +32,12 @@ app/.env.local
 app/.env.development.local
 app/.env.test.local
 app/.env.production.local
+
+# anchor
+.anchor
+.DS_Store
+target
+**/*.rs.bk
+node_modules
+test-ledger
+.yarn
