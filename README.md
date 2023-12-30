@@ -39,7 +39,7 @@ local testnet explorer:
  https://explorer.solana.com/?cluster=custom&customUrl=http%3A%2F%2F127.0%3A8899
  
  https://github.com/coral-xyz/anchor/issues/1912
-![[Pasted image 20231229194258.png]]
+![workflow anchor](workflow.png)
 
 get program_id:
 ```
