@@ -1,3 +1,5 @@
+# Simple Solana onchain blog
+## Setup
 Start own testnet:
 ```
 solana-test-validator
