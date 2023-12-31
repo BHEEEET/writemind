@@ -40,6 +40,7 @@ Local testnet explorer:
 
 ## Workflow 
 ![workflow anchor](images/workflow.png)
+
 https://github.com/coral-xyz/anchor/issues/1912
 
 Get program_id:
