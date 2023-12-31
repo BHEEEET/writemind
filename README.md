@@ -1,6 +1,6 @@
 # Simple Solana onchain blog
 ## Setup
-Start own testnet:
+### Start own testnet:
 ```
 solana-test-validator
 ```
@@ -15,7 +15,7 @@ See activity:
 solana logs
 ```
 
-init:
+### init
 ```
 cargo init hello_world 
 cargo add solana-program
@@ -23,21 +23,21 @@ cargo add solana-program
 anchor init hello_world
 ```
 
-Build:
+### Build:
 ```
 cargo build-bpf
 
 anchor build
 ```
 
-Deploy:
+### Deploy:
 ```
 solana program deploy ./target/deploy/hello_world.so
 
 anchor deploy
 ```
 
-Local testnet explorer:
+### Local testnet explorer:
  https://explorer.solana.com/?cluster=custom&customUrl=http%3A%2F%2F127.0%3A8899
 
 ## Workflow 
@@ -49,14 +49,14 @@ Get program_id:
 ```
 anchor keys list
 ```
-
+## Debug
 Add program_id to `/target/idl/hello_world.json`:
 ```json
 ,
 "metadata":
 {"address": "progam_id"}
 ```
-
+## Testing
 Test contract:
 ```bash
 anchor test 
